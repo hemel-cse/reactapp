@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300');
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,600');
+
   body {
     font-family: 'Lato', sans-serif;
     color: #333;
@@ -15,11 +18,13 @@
     color: #4676fa;
   }
   a {
+    text-decoration: none;
     -webkit-transition: all 0.2s linear;
     -moz-transition: all 0.2s linear;
     -o-transition: all 0.2s linear;
     transition: all 0.2s linear;
   }
+
   .btn {
     font-size: 14px;
     padding: 10px 30px;

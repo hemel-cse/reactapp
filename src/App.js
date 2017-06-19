@@ -16,13 +16,16 @@ class App extends Component {
     };
     return (
       <div style={divimg}>
-      <div className="body" >
-      <Menu />
-
-      <div>
-       <h1> Hi </h1>
-      </div>
-      </div>
+          <div className="fixed-top">
+            <div className="container">
+              <div className="logo-menu">
+                <a href="/" className="logo">NCC</a>
+              </div>           
+            </div>
+          </div>
+        <div className="body" >
+        <Menu />
+        </div>
       </div>
     );
   }
