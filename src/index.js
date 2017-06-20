@@ -4,5 +4,11 @@ import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 import './index.css';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+var injectTapEventPlugin = require("react-tap-event-plugin");
+injectTapEventPlugin();
+
+ReactDOM.render( 
+	<App />, 
+	document.getElementById('app')
+);
 registerServiceWorker();

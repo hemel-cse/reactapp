@@ -1,44 +1,43 @@
 import React, { Component } from 'react';
 import "./Components.css";
 
-
-class Menu extends Component {
+class Mainmenu extends Component {
   render() {
-    return (   
+    return (
     <div className="menu-wrap">
         <nav className="menu navbar">
           <div className="icon-list">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <a className="nav-link" href="#video-area">Home</a>
+                <a className="nav-link"  href="/Course">Course</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#services">Services</a>
+                <a className="nav-link"  href="/Introduction">Introduction</a>
               </li>  
               <li className="nav-item">
-                <a className="nav-link" href="#features">Features</a>
+                <a className="nav-link" href="/Curriculum">Curriculum</a>
               </li>                            
               <li className="nav-item">
-                <a className="nav-link" href="#portfolios">Our Works</a>
+                <a className="nav-link" href="/Benefits">Benefits</a>
               </li>            
               <li className="nav-item">
-                <a className="nav-link" href="#pricing">Pricing</a>
+                <a className="nav-link" href="/Trainers">Trainers</a>
               </li>     
               <li className="nav-item">
-                <a className="nav-link" href="#blog">Blog</a>
+                <a className="nav-link" href="/Lab">Lab</a>
               </li> 
               <li className="nav-item">
-                <a className="nav-link" href="#contact">Contact</a>
+                <a className="nav-link" href="/Admission">Admission</a>
               </li> 
               <li className="nav-item">
-                <a className="nav-link" href="#subscribe">Subscribe</a>
+                <a className="nav-link" href="/FAQ">FAQ</a>
               </li>
             </ul>
           </div>
         </nav>
-    </div>      
+    </div>  
     );
   }
 }
 
-export default Menu;
+export default Mainmenu;
