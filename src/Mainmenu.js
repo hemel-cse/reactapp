@@ -1,11 +1,17 @@
 import React, { Component } from 'react';
+import logo from './logo.svg';
 import "./Components.css";
 
 class Mainmenu extends Component {
   render() {
     return (
     <div className="menu-wrap">
-        <nav className="menu navbar">
+      <div className="logo-menu">
+        <a className="logo" href="/">
+          <img src={ logo } alt='app-logo' />
+        </a>
+      </div>
+      <nav className="menu navbar">
           <div className="icon-list">
             <ul className="navbar-nav">
               <li className="nav-item">

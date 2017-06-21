@@ -224,8 +224,7 @@
 
   }
 
-  .logo {
-    height: 160px;
-    width: 160px;
-    position: fixed;
+  .logo img{
+    height: 100px;
   }
+

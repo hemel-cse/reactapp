@@ -16,7 +16,7 @@
 
 
 .logo-menu{
-	padding: 15px 0;
+	padding: 12px 0;
 }
 .menu-bg .logo-menu{
 	padding: 6px 0;
@@ -30,13 +30,9 @@
 .menu-wrap {
 	position: fixed;
 	z-index: 9999;
-	top: 200px;
 	width: 260px;
-	left: 0;
-	height: 50%;
 	background: none;
-	padding: 2.5em 1.5em 0;
-	font-size: 1.20em;
+	font-size: 1.1em;
 	-webkit-transition: -webkit-transform 0.4s;
 	transition: transform 0.4s;
 	-webkit-transition-timing-function: cubic-bezier(0.7,0,0.3,1);
@@ -86,16 +82,16 @@
 	left: 22px;
 	position: absolute;
 	top: 50px;
-	-webkit-transform: scale(1);
-	transform: scale(1);
+	-webkit-transform: scale(0);
+	transform: scale(0);
 	-webkit-transition: all 0.3s ease 0s;
 	transition: all 0.3s ease 0s;
 	width: 120px;
 }
 
 .icon-list a:active:after{
-	-webkit-transform: scale(0);
-	transform: scale(0);
+	-webkit-transform: scale(1);
+	transform: scale(1);
 }
 
 
