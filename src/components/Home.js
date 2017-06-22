@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import './Components.css';
 import Mainmenu from './Mainmenu';
-import Header from './Header';
-import Background from './Images/1.jpg';
+import Background from '../Images/1.jpg';
 
 
 class Home extends Component {
@@ -12,7 +11,6 @@ class Home extends Component {
     };
     return (
       <div style={divimg} className="coverImg">
-          <Header />
           <Mainmenu />
       </div>    
      );

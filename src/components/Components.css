@@ -16,7 +16,7 @@
 
 
 .logo-menu{
-	padding: 12px 0;
+	/*padding: 12px 0;*/
 }
 .menu-bg .logo-menu{
 	padding: 6px 0;
@@ -46,14 +46,15 @@
 }
 
 .icon-list {
-
+    padding-top: 1.5em;
 }
 
 .icon-list a {
 	color: #fff;
 	font-weight: bold;
 	display: block;
-	padding: 1.26em;
+	padding: 1.1em;
+	padding-left: 2.273em;
 	position: relative;
 }
 .icon-list a:before{

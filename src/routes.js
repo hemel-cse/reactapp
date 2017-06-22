@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import { Route,
 	BrowserRouter as Router,
 } from 'react-router-dom';
-import Home from "./Home";
-import FAQ from "./FAQ";
-import App from "./App";
+import Home from "./components/Home";
+import FAQ from "./components/FAQ";
+import App from "./components/App";
 import createHistory from 'history/createBrowserHistory';
 
 class Routes extends Component {

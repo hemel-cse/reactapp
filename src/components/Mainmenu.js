@@ -41,7 +41,18 @@ class Mainmenu extends Component {
             </ul>
           </div>
         </nav>
-    </div>  
+        <nav className="menu">
+            <div className="icon-list">
+                <ul className="navbar-nav">
+                    <li className="nav-item">
+                        <a className="nav-link"  href="/Contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+
     );
   }
 }
