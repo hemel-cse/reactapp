@@ -6,7 +6,7 @@ class Header extends Component {
     return (
          <div className="fixed-top">
             <div className="container">
-
+                <p>Header</p>
             </div>
           </div>
     );

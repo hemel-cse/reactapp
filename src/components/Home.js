@@ -1,18 +1,22 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
+import Menu from './Mainmenu';
 import './Components.css';
-import Mainmenu from './Mainmenu';
-import Background from '../Images/1.jpg';
+
+import Bg from '../Images/1.jpg';
 
 
 class Home extends Component {
   render() {
-  	var divimg = {
-        backgroundImage: 'url(' + Background + ')',
-    };
+      var mainDivImg = {
+          backgroundImage: 'url(' + Bg + ')',
+      };
     return (
-      <div style={divimg} className="coverImg">
-          <Mainmenu />
-      </div>    
+        <div style={mainDivImg} className="coverImg">
+                <Menu />
+            <div className="content">
+                <h1>This is home</h1>
+            </div>
+        </div>
      );
   }
 }

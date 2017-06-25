@@ -109,3 +109,11 @@
 	margin-left: 10px;
 	font-weight: 700;
 }
+
+/* finish the menu style */
+
+.content {
+    text-align: center;
+    vertical-align: middle;
+    padding: 5px;
+}

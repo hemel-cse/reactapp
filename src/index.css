@@ -184,7 +184,7 @@
   }
   .menu-button:hover {
     cursor: pointer;
-    opacity: #fff;
+    opacity: initial;
   }
 
   .navbar-light .navbar-nav .nav-item {
