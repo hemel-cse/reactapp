@@ -11,11 +11,13 @@ class Home extends Component {
           backgroundImage: 'url(' + Bg + ')',
       };
     return (
+      <div>
+        <Menu />
         <div style={mainDivImg} className="coverImg">
-                <Menu />
             <div className="content">
                 <h1>This is home</h1>
             </div>
+        </div>
         </div>
      );
   }

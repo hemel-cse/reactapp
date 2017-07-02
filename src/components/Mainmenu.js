@@ -11,46 +11,48 @@ class Mainmenu extends Component {
   render() {
     return (
             <div className="menu-wrap">
-              <div className="logo-menu">
-                  <Link className="logo" to='/'>
+              <div className="logo">
+                  <Link to='/'>
                       <img src={ logo } alt='app-logo' />
                   </Link>
               </div>
-              <nav className="menu navbar">
-                  <div className="icon-list">
-                    <ul className="navbar-nav">
-                      <li className="nav-item">
-                          <NavLink className="nav-link" to='/course'>Course</NavLink>
+
+              <nav>
+                  <div className="menu-list">
+                    <ul>
+                      <li>
+                          <NavLink to='/course'>Course</NavLink>
                       </li>
-                      <li className="nav-item">
-                          <NavLink className="nav-link"  to='/introduction'>Introduction</NavLink>
+                      <li>
+                          <NavLink to='/introduction'>Introduction</NavLink>
                       </li>
-                      <li className="nav-item">
-                          <NavLink className="nav-link" to='/curriculum'>Curriculum</NavLink>
+                      <li>
+                          <NavLink to='/curriculum'>Curriculum</NavLink>
                       </li>
-                      <li className="nav-item">
-                          <NavLink className="nav-link" to='/benefits'>Benefits</NavLink>
+                      <li>
+                          <NavLink to='/benefits'>Benefits</NavLink>
                       </li>
-                      <li className="nav-item">
-                          <NavLink className="nav-link" to='/trainers'>Trainers</NavLink>
+                      <li>
+                          <NavLink to='/trainers'>Trainers</NavLink>
                       </li>
-                      <li className="nav-item">
-                          <NavLink  className="nav-link" to='/lab'>Lab</NavLink>
+                      <li>
+                          <NavLink to='/lab'>Lab</NavLink>
                       </li>
-                      <li className="nav-item">
-                          <NavLink className="nav-link"  to='/admission'>Admission</NavLink>
+                      <li>
+                          <NavLink to='/admission'>Admission</NavLink>
                       </li>
-                      <li className="nav-item">
-                          <NavLink className="nav-link"  to='/faq'>FAQ</NavLink>
+                      <li>
+                          <NavLink to='/faq'>FAQ</NavLink>
                       </li>
                     </ul>
                   </div>
                 </nav>
-                <nav className="menu">
-                    <div className="icon-list">
-                        <ul className="navbar-nav">
-                            <li className="nav-item">
-                                <NavLink className="nav-link"  to='/contact'>Contact</NavLink>
+                
+                <nav className="navbar-bottom">
+                    <div className="menu-list">
+                        <ul>
+                            <li>
+                                <NavLink to='/contact'>Contact</NavLink>
                             </li>
                         </ul>
                     </div>
