@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import Menu from './Mainmenu';
 import './Components.css';
-
+import Header from './Header';
+import Menu from './Mainmenu';
 import Bg from '../Images/1.jpg';
 
 
@@ -11,9 +11,10 @@ class Home extends Component {
           backgroundImage: 'url(' + Bg + ')',
       };
     return (
-      <div>
+      <div style={mainDivImg} className="coverImg">
+        <Header/>
         <Menu />
-        <div style={mainDivImg} className="coverImg">
+        <div>
             <div className="content">
                 <h1>This is home</h1>
             </div>

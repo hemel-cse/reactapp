@@ -19,6 +19,7 @@ import PageNotFound from "./components/NotFound";
 class App extends Component {
   render() {
     return (
+        <div className="container">
             <Switch>
                 <Route exact path='/' component={Home}/>
                 <Route path='/course' component={Course}/>
@@ -32,6 +33,7 @@ class App extends Component {
                 <Route path='/contact' component={Contact}/>
                 <Route component={PageNotFound} />
             </Switch>
+        </div>
     );
   }
 }

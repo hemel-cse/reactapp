@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:100,600');
 @import url('https://fonts.google.com/?selection.family=Roboto:300,400,500');
 
+
+
   body {
     font-family: 'Lato', sans-serif;
     color: #fff;
@@ -112,11 +114,13 @@
   a:not([href]):not([tabindex]):hover {
     color: #fff;
   }
- 
-  /* ==========================================================================
-     Navbar Style
-     ========================================================================== */
-  
+
+
+.container {
+  background: #333;
+  margin: 0;
+  padding: 0;
+}
 
   .coverImg {
     background-size: cover;
@@ -125,6 +129,6 @@
   }
 
   .logo img{
-    height: 100px;
+    height: 10.817vh;
   }
 

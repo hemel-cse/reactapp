@@ -1,21 +1,14 @@
 import React, { Component } from 'react';
 import {
-    NavLink,
-    Link
+    NavLink
 } from 'react-router-dom';
 
-import logo from './logo.svg';
 import "./Components.css";
 
 class Mainmenu extends Component {
   render() {
     return (
             <div className="menu-wrap">
-              <div className="logo">
-                  <Link to='/'>
-                      <img src={ logo } alt='app-logo' />
-                  </Link>
-              </div>
 
               <nav>
                   <div className="menu-list">
