@@ -20,7 +20,6 @@ import './index.css';
 class App extends Component {
   render() {
     return (
-        <div className="vbox viewport">
             <Switch>
                 <Route exact path='/' component={Home}/>
                 <Route path='/course' component={Course}/>
@@ -34,7 +33,6 @@ class App extends Component {
                 <Route path='/contact' component={Contact}/>
                 <Route component={PageNotFound} />
             </Switch>
-        </div>
     );
   }
 }

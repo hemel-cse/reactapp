@@ -10,11 +10,15 @@ import Bg from '../Images/1.jpg';
 
 class Home extends Component {
   render() {
-      var mainDivImg = {
+      let mainDivImg = {
           backgroundImage: 'url(' + Bg + ')',
       };
+      const title = "Professional Diploma in";
+      const title2 = "GAME DEVELOPMENT";
     return (
       <div style={mainDivImg} className="coverImg">
+
+      <div className="vbox viewport">
        <header>
            <Header/>
        </header>
@@ -25,13 +29,17 @@ class Home extends Component {
               <content>
                   <div className="content">
                       <div className="homeTitle">
-                          <h1>This is home you know it</h1>
+                          <div className="homeTitleContent">
+                          <div className="homeTitleText">
+                              <h1>{title} <span>{title2}</span></h1>
+                          </div>
+                          </div>
+                      </div>
+                      <div>
+                          <p>button here</p>
                       </div>
                   </div>
               </content>
-              <aside>
-
-              </aside>
           </section>
           <footer>
               <nav className="navbar-bottom">
@@ -44,6 +52,7 @@ class Home extends Component {
                   </div>
               </nav>
           </footer>
+         </div>
         </div>
      );
   }

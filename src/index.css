@@ -176,10 +176,10 @@ header, footer {
 
 content {
     /* current syntax */
-    -webkit-flex: 5;
-    -moz-flex: 5;
-    -ms-flex: 5;
-    flex: 5;
+    -webkit-flex: 7;
+    -moz-flex: 7;
+    -ms-flex: 7;
+    flex: 7;
 }
 
 nav, aside {
@@ -197,15 +197,39 @@ nav, aside {
 }
 
 .content {
-    text-align: center;
     vertical-align: middle;
-    padding: 5px;
+    padding: 10px;
 }
 
+.homeTitle {
+    color: white;
+    height: 460px;
+
+}
+
+.homeTitleContent{
+    position: relative;
+    float: left;
+    text-align: center;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -45%);
+}
+.homeTitleText h1{
+    font-size: 60px;
+    font-weight: bold;
+    display:block;
+}
+.homeTitleText span{
+    font-size: 70px;
+    font-weight: bold;
+    display:block;
+}
 
 .coverImg {
     background-size: cover;
     height: 100vh;
+
 
 }
 
