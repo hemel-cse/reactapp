@@ -40,16 +40,6 @@ class Mainmenu extends Component {
                     </ul>
                   </div>
                 </nav>
-                
-                <nav className="navbar-bottom">
-                    <div className="menu-list">
-                        <ul>
-                            <li>
-                                <NavLink to='/contact'>Contact</NavLink>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
             </div>
     );
   }

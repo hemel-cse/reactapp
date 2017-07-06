@@ -15,11 +15,12 @@ import Admission from "./components/Admission";
 import FAQ from "./components/FAQ";
 import Contact from "./components/Contact";
 import PageNotFound from "./components/NotFound";
+import './index.css';
 
 class App extends Component {
   render() {
     return (
-        <div className="container">
+        <div className="vbox viewport">
             <Switch>
                 <Route exact path='/' component={Home}/>
                 <Route path='/course' component={Course}/>
