@@ -4,20 +4,24 @@ import {
 } from 'react-router-dom';
 import './Components.css';
 import logo from './logo.svg';
+import { Grid, Row, Col } from 'react-flexbox-grid';
 
 class Header extends Component {
   render() {
     return (
-         <div className="fixed-top">
-                <div className="logo">
-                    <Link to='/'>
-                        <img src={ logo } alt='app-logo' />
-                    </Link>
-                </div>
-             <div className="header-middle">
-
-             </div>
-          </div>
+            <Grid fluid>
+                <Row between="xs">
+                    <Col xs={4}>
+                        <div className="logo">
+                            <Link to='/'>
+                                <img src={ logo } alt='app-logo' />
+                            </Link>
+                        </div>
+                    </Col>
+                    <Col xs={4} />
+                    <Col xs={4} />
+                </Row>
+            </Grid>
     );
   }
 }

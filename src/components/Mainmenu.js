@@ -9,7 +9,6 @@ class Mainmenu extends Component {
   render() {
     return (
             <div className="menu-wrap">
-
               <nav>
                   <div className="menu-list">
                     <ul>
@@ -39,16 +38,6 @@ class Mainmenu extends Component {
                       </li>
                     </ul>
                   </div>
-                </nav>
-                
-                <nav className="navbar-bottom">
-                    <div className="menu-list">
-                        <ul>
-                            <li>
-                                <NavLink to='/contact'>Contact</NavLink>
-                            </li>
-                        </ul>
-                    </div>
                 </nav>
             </div>
     );
