@@ -9,7 +9,6 @@ class Mainmenu extends Component {
   render() {
     return (
             <div className="menu-wrap">
-
               <nav>
                   <div className="menu-list">
                     <ul>
