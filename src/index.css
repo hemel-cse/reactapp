@@ -2,43 +2,33 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:100,600');
 @import url('https://fonts.google.com/?selection.family=Roboto:300,400,500');
 
-html, body, .viewport {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-  body {
+body {
     font-family: 'Lato', sans-serif;
     color: #fff;
+    height:100%;
+    margin: 0;
+    padding: 0;
     font-size: 14px;
     font-weight: 300;
     background: #333;
-    display: flex;
-    display: -webkit-flex;
-    flex-direction: column;
-    -webkit-flex-direction: column;
-    align-items: center;
-    -webkit-align-items: center;
-  }
-  p {
+}
+p {
     font-size: 14px;
     line-height: 26px;
-  }
-  a:hover,
-  a:focus {
+}
+a:hover,
+a:focus {
     color: #fff;
-  }
-  a {
+}
+a {
     text-decoration: none;
     -webkit-transition: all 0.2s linear;
     -moz-transition: all 0.2s linear;
     -o-transition: all 0.2s linear;
     transition: all 0.2s linear;
-  }
+}
 
-  .btn {
+.btn {
     font-size: 14px;
     padding: 10px 30px;
     border-radius: 0px;
@@ -51,156 +41,94 @@ html, body, .viewport {
     transition: all 0.2s linear;
     display: inline-block;
     font-family: 'Lato', sans-serif;
-  }
-  .btn:focus {
+}
+.btn:focus {
     box-shadow: none;
     outline: none;
-  }
-  .btn-common {
+}
+.btn-common {
     border: 2px solid #4676fa;
     background-color: #4676fa;
     position: relative;
     z-index: 1;
     border-radius: 4px;
-  }
-  .btn-common:hover {
+}
+.btn-common:hover {
     color: #4676fa;
     background-color: transparent;
     border: 2px solid #4676fa;
     transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
     -webkit-transition: all 0.5s ease-in-out;
-  }
-  .btn-border {
+}
+.btn-border {
     color: #fff;
     background-color: transparent;
     border: 2px solid #fff;
     border-radius: 4px;
-  }
-  .btn-border:hover {
+}
+.btn-border:hover {
     border: 2px solid #fff;
     color: #fff;
     background-color: #4676fa;
-  }
-  .btn-lg {
+}
+.btn-lg {
     padding: 14px 33px;
     text-transform: uppercase;
     font-size: 16px;
-  }
-  .btn-rm {
+}
+.btn-rm {
     padding: 7px 10px;
     text-transform: capitalize;
-  }
-  .clear {
+}
+.clear {
     clear: both;
-  }
-  h1,
-  h2,
-  h3,
-  h4,
-  h5 {
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
     font-family: 'Raleway', sans-serif;
     font-size: 40px;
     font-weight: 100;
     letter-spacing: 1px;
-  }
-  ul {
+}
+ul {
     margin: 0;
     padding: 0;
-  }
-  ul li {
+}
+ul li {
     list-style: none;
-  }
-  a:hover,
-  a:focus {
+}
+a:hover,
+a:focus {
     text-decoration: none;
     outline: none;
-  }
-  a:not([href]):not([tabindex]) {
+}
+a:not([href]):not([tabindex]) {
     color: #fff;
-  }
-  a:not([href]):not([tabindex]):focus,
-  a:not([href]):not([tabindex]):hover {
+}
+a:not([href]):not([tabindex]):focus,
+a:not([href]):not([tabindex]):hover {
     color: #fff;
-  }
-
-header, footer, article, aside {
-    padding: 0.25em;
-    margin: 0.25em;
-
 }
 
-/* items flex/expand vertically */
-.vbox {
-    /* current syntax */
-  display: -webkit-flex;
-  display:    -moz-flex;
-  display:     -ms-flex;
-  display:         flex;
-
-  -webkit-flex-direction: column;
-  -moz-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-/* items flex/expand horizontally */
-.hbox {
-  /* current syntax */
-  display: -webkit-flex;
-  display:    -moz-flex;
-  display:     -ms-flex;
-  display:         flex;
-
-  -webkit-flex-direction: row;
-  -moz-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-.space-between {
-    /* current syntax */
-    -webkit-justify-content: space-between;
-    -moz-justify-content: space-between;
-    -ms-justify-content: space-between;
-    justify-content: space-between;
-}
-
-/* I went with a fixed height header & footer because it's a common case.
-  This could easily be altered to flex proportionally with the page.
-*/
-header, footer {
-    height: 100px;
-}
-
-.main {
-    /* current syntax */
-    -webkit-flex: 1;
-    -moz-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-}
-
-content {
-    /* current syntax */
-    -webkit-flex: 7;
-    -moz-flex: 7;
-    -ms-flex: 7;
-    flex: 7;
-}
-
-nav, aside {
-    /* current syntax */
-    -webkit-flex: 1;
-    -moz-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
+header {
+    padding: 1rem;
 }
 .container {
-  background: #333;
-  margin: 0;
-  padding: 0;
+    background: #333;
+    margin: 0;
+    padding: 0;
+}
 
+.coverImg {
+    height: 100vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 .content {
@@ -210,7 +138,7 @@ nav, aside {
 
 .homeTitle {
     color: white;
-    height: 460px;
+    height: 440px;
 
 }
 
@@ -222,28 +150,28 @@ nav, aside {
     position: relative;
     float: left;
     text-align: center;
-    top: 40%;
-    left: 45%;
-    transform: translate(-50%, -45%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .homeTitleText h1{
-    font-size: 60px;
+    font-size: 66px;
     font-weight: bold;
     display:block;
 }
 .homeTitleText span{
-    font-size: 70px;
+    font-size: 76px;
     font-weight: bold;
     display:block;
 }
 
-.coverImg {
-    background-size: cover;
-    height: 100vh;
-
-}
-
 .logo img{
     height: 10.817vh;
+}
+
+.navbar-bottom {
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 1rem;
 }
 

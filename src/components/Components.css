@@ -1,7 +1,6 @@
 /* Menu */
 .menu-wrap {
 	position: absolute;
-	height: 100%;
 	width: 260px;
 	background: none;
 	font-size: 1.1em;
@@ -49,12 +48,6 @@
 .menu-list a:hover,
 .menu-list a:focus{
 	color: #fff;
-}
-
-.navbar-bottom {
-	position: absolute;
-    bottom: 0;
-    padding-bottom: 1em;
 }
 
 @media screen and (max-width: 768px) {

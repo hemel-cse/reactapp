@@ -1,9 +1,7 @@
 import React, { Component } from 'react'
 import './Components.css';
 import Header from './Header';
-import {
-    NavLink
-} from 'react-router-dom';
+import Footer from './Footer';
 import Menu from './Mainmenu';
 import Bg from '../Images/1.jpg';
 
@@ -17,16 +15,10 @@ class Home extends Component {
       const title2 = "GAME DEVELOPMENT";
     return (
       <div style={mainDivImg} className="coverImg">
-
-      <div className="vbox viewport">
        <header>
            <Header/>
        </header>
-          <section className="main hbox space-between">
-              <nav>
                   <Menu/>
-              </nav>
-              <content>
                   <div className="content">
                       <div className="homeTitle">
                           <div className="homeTitleContent">
@@ -39,20 +31,9 @@ class Home extends Component {
                           <p>button here</p>
                       </div>
                   </div>
-              </content>
-          </section>
           <footer>
-              <nav className="navbar-bottom">
-                  <div className="menu-list">
-                      <ul>
-                          <li>
-                              <NavLink to='/contact'>Contact</NavLink>
-                          </li>
-                      </ul>
-                  </div>
-              </nav>
+              <Footer/>
           </footer>
-         </div>
         </div>
      );
   }
