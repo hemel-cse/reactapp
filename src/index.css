@@ -125,7 +125,7 @@ header {
 
 .coverImg {
     height: 100vh;
-    background-position: center center;
+    background-position: center top;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -138,11 +138,11 @@ header {
 
 .homeTitle {
     color: white;
-    height: 440px;
+    height: 360px;
 
 }
 
-.textcenter {
+.text-center {
     text-align: center;
 }
 
@@ -175,3 +175,55 @@ header {
     padding-bottom: 1rem;
 }
 
+.menu-bottom {
+    text-align: -webkit-right;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-bottom: 1rem;
+}
+
+.apply-button {
+    padding: 15px 30px;
+    background: #333;
+    width: 40px;
+    border-radius: 25px;
+}
+
+.apply-button a {
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.home-button {
+    text-align: -webkit-center;
+}
+
+.item-bottom {
+    bottom: 0;
+    padding-bottom: 1rem;
+}
+
+.logo {
+    text-align: -webkit-left;
+}
+
+.top-button {
+    text-align: -webkit-right;
+}
+
+@media screen and (max-width: 768px) {
+    .logo {
+        text-align: -webkit-center;
+    }
+    .top-button {
+        text-align: -webkit-center;
+    }
+}
