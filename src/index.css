@@ -220,10 +220,11 @@ header {
 }
 
 @media screen and (max-width: 768px) {
-    .logo {
-        text-align: -webkit-center;
+    .mobile-menu {
+        text-align: -webkit-right;
     }
     .top-button {
+        display: none;
         text-align: -webkit-center;
     }
 }

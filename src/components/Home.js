@@ -8,7 +8,28 @@ import Bg from '../Images/1.jpg';
 
 
 class Home extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            width: window.innerWidth,
+        };
+    }
+
+    componentWillMount() {
+        window.addEventListener('resize', this.handleWindowSizeChange);
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener('resize', this.handleWindowSizeChange);
+    }
+
+    handleWindowSizeChange = () => {
+        this.setState({ width: window.innerWidth });
+    };
   render() {
+      const { width } = this.state;
+      const isMobile = width <= 768;
+
       let mainDivImg = {
           backgroundImage: 'url(' + Bg + ')',
       };
@@ -17,7 +38,7 @@ class Home extends Component {
     return (
       <div style={mainDivImg} className="coverImg">
                <header>
-                   <Header button={<Apply/>} />
+                   <Header button={<Apply/>} isMobile={isMobile} />
                </header>
                           <Menu/>
                           <div className="content">
